@@ -21,19 +21,13 @@
       ]
     }
   ],
-  "provisioners": [
+    "provisioners": [
 
     {
       "inline": [
       "dir c:\\"
         ],
       "type": "windows-shell"
-    },
-    {
-      "type": "powershell",
-      "script": "scripts/configure-features.ps1",
-      "elevated_user": "vagrant",
-      "elevated_password": "vagrant"
     },
     {
       "type": "powershell",
